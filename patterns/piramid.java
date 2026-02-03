@@ -1,17 +1,18 @@
-public class equilateraltriangle {
-    public static void main(String[] args) {
-        int n=4;
+package patterns;
+public class piramid {
+        public static void main(String[] args) {
+        int n=5;
         int row=0;
-        while (row<n) {
+        while (row<n){
             // System.out.print(" ".repeat(n-row));
             int col=0;
-            while(col<n-row){
+            while (col<n-row){
                 System.out.print(" ");
                 col++;
             }
             col=0;
-            while(col<2*row+1){
-                System.out.print("*");
+            while (col<=row){
+                System.out.print("* ");
                 col++;
             }
             System.out.println();
@@ -19,3 +20,9 @@ public class equilateraltriangle {
         }
     }
 }
+// Output:
+//     *
+//    * *
+//   * * *
+//  * * * *
+// * * * * *

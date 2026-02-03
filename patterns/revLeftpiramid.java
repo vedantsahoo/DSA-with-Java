@@ -1,19 +1,22 @@
-import java.util.Scanner;
-
-public class leftpiramid {
+package patterns;
+public class revLeftpiramid {
         public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int n = 5;
         int row = 0;
         while (row<n) {
             int col = 0;
-            while (col<=row){
+            while (col<n-row){
                 System.out.print("*");
                 col++;
             }
             System.out.println("");
             row++;
         }
-        sc.close();
     }
 }
+// Output:
+// *****
+// ****
+// ***
+// **
+// *

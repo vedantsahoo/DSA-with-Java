@@ -1,3 +1,4 @@
+package assignmests;
 import java.util.Scanner;
 public class greaterNum {
     public static void main(String[] args) {

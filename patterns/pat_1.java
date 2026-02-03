@@ -1,8 +1,7 @@
-import java.util.Scanner;
+package patterns;
 public class pat_1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int n = 4; 
         int row = 0;
         while (row<n) {
             int col = 0;
@@ -13,6 +12,10 @@ public class pat_1 {
             System.out.println("");
             row++;
         }
-        sc.close();
     }
 }
+// Output:
+// ****
+// ****
+// ****
+// ****
