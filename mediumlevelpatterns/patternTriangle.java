@@ -13,16 +13,15 @@ public class patternTriangle {
             }
             j=1;
             int num=i;
-            while(j<=i){
-                System.out.print(num+"\t");
-                num++;
-                j++;
-            }
-            j=1;
-            num=num-2;
-            while (j<i){
-                System.out.print(num+"\t");
-                num--;
+            while(j<=i*2-1){
+                if (j>i-1){
+                    System.out.print(num+"\t");
+                    num--;
+                }
+                else{
+                    System.out.print(num+"\t");
+                    num++;
+                }    
                 j++;
             }
             System.out.println();
