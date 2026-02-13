@@ -7,16 +7,18 @@ public class HollowRhombusPattern {
         int i=1;
         while(i<=N){
             int j=1;
-            while(j<=N-i)
+            while(j<=N-i){
                 System.out.print(" ");
                 j++;
+            }
             j=1;
-            while(j<=N)
-                if(i==1||i==N||j==0||j==N)
+            while(j<=N){
+                if(i==1||i==N||j==1||j==N)
                     System.out.print("*");
                 else
                     System.out.print(" ");
                 j++;
+            }
             System.out.println();
             i++;
         }
