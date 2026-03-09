@@ -2,7 +2,6 @@ package specialcasespattern;
 
 import java.util.Scanner;
 
-import patterns.numpat_1;
 
 public class reversetriangleofnum {
     public static void main(String[] args) {
