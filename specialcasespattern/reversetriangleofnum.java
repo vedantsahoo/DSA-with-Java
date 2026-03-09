@@ -2,7 +2,6 @@ package specialcasespattern;
 
 import java.util.Scanner;
 
-
 public class reversetriangleofnum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,6 +25,10 @@ public class reversetriangleofnum {
         }
         i=N-1;
         while (i >= 0) {
+            if (i==N-1){
+                i--;
+                continue;
+            }
             int space = 0;
             while (space < i) {
                 System.out.print(" ");
