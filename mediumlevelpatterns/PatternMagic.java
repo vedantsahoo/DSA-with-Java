@@ -13,12 +13,12 @@ public class PatternMagic {
             }
             j=1;
             while(j<=i-1){  
-                System.out.print(" ");
+                System.out.print("-");
                 j++;
             }
             j=1;
             while(j<=i-2){
-                System.out.print(" ");
+                System.out.print("-");
                 j++;
             }
             j=1;
@@ -40,12 +40,12 @@ public class PatternMagic {
             }
             j=1;
             while(j<=i-1){  
-                System.out.print(" ");
+                System.out.print("-");
                 j++;
             }
             j=1;
             while(j<=i-2){
-                System.out.print(" ");
+                System.out.print("-");
                 j++;
             }
             j=1;
