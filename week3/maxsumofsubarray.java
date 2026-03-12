@@ -16,6 +16,9 @@ public class maxsumofsubarray {
             if (max < sum) {
                 max = sum;
             }
+            if (sum < 0) {
+                sum = 0;
+            }
         }
         return max;
     }
