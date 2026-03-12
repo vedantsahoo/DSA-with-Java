@@ -12,12 +12,11 @@ public class maxsumofsubarray {
         int max = Integer.MIN_VALUE;
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
-            if (max < sum) {
-                max = sum;
-            }
             if (sum < 0) {
-                sum = 0;
+                sum = arr[i];
+            }else{ 
+                sum = sum + arr[i];
+                if (max<sum) max = sum;
             }
         }
         return max;
