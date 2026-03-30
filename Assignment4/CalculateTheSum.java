@@ -1,21 +1,8 @@
 package Assignment4;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class CalculateTheSum {
-    static final int MOD=1000000007;
-    static long power(long base,long exp){
-        long res=1;
-        base=base%MOD;
-        while(exp>0){
-            if(exp%2==1){
-                res=(res*base)%MOD;
-            }
-            base=(base*base)%MOD;
-            exp/=2;
-        }
-        return res;
-    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
@@ -23,14 +10,14 @@ public class CalculateTheSum {
         long curSum=0;
         for(int i=0;i<n;i++){
             arr[i]=sc.nextLong();
-            curSum=(curSum+arr[i])%MOD;
+            curSum=(curSum+arr[i]);
         }
         int q=sc.nextInt();
         for(int i=0;i<q;i++){
             sc.nextLine();
         }
-        long multiplier=power(2,q);
-        long ans=(curSum*multiplier)%MOD;
+        long multiplier=(long)Math.pow(2,q);
+        long ans=(curSum*multiplier);
         System.out.println(ans);
     }
 }
