@@ -1,34 +1,34 @@
 package Assignment4;
 
-import java.io.*;
+// import java.io.*;
 import java.util.*;
 public class HelpRamu {
+    // static class FastReader {
+    //     BufferedReader br;
+    //     StringTokenizer st;
+    //     public FastReader() {
+    //         br = new BufferedReader(new InputStreamReader(System.in));
+    //     }
+    //     String next() {
+    //         while (st == null || !st.hasMoreElements()) {
+    //             try {
+    //                 String line = br.readLine();
+    //                 if (line == null) return null;
+    //                 st = new StringTokenizer(line);
+    //             } catch (IOException e) {
+    //                 e.printStackTrace();
+    //             }
+    //         }
+    //         return st.nextToken();
+    //     }
+    //     int nextInt() {
+    //         return Integer.parseInt(next());
+    //     }
+    // }
     // public static void main(String[] args) {
-    //     Scanner sc=new Scanner(System.in);
-    static class FastReader {
-        BufferedReader br;
-        StringTokenizer st;
-        public FastReader() {
-            br = new BufferedReader(new InputStreamReader(System.in));
-        }
-        String next() {
-            while (st == null || !st.hasMoreElements()) {
-                try {
-                    String line = br.readLine();
-                    if (line == null) return null;
-                    st = new StringTokenizer(line);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            return st.nextToken();
-        }
-        int nextInt() {
-            return Integer.parseInt(next());
-        }
-    }
+    //     FastReader sc = new FastReader();
     public static void main(String[] args) {
-        FastReader sc = new FastReader();
+        Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         while (t-- > 0) {
             // Read ticket costs
