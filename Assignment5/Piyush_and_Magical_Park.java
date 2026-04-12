@@ -27,7 +27,7 @@ public class Piyush_and_Magical_Park {
                 }
                 char curCell = park[i][j];
                 
-                if(curCell=='*') s+=k;
+                if(curCell=='*') s+=5;
                 else if(curCell=='.') s-=2;
                 else if(curCell=='#') break;
                 if(j!=m-1){
@@ -36,7 +36,7 @@ public class Piyush_and_Magical_Park {
             }
             if(!canEscape) break;
         }
-        if(canEscape && s>=k){
+        if(canEscape){
             System.out.println("Yes");
             System.out.println(s);
         }else{
